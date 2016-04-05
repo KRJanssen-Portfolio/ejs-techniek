@@ -100,8 +100,8 @@ textarea {
 }
 
 @font-face {
-    font-family: Oranienbaum;
-    src: url(../fonts/oranienbaum/oranienbaum.ttf);
+    font-family: SegoeUI;
+    src: url(../fonts/segoe-ui/segoeuiz.ttf);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: Oranienbaum;
+    font-family: SegoeUI serif;
     letter-spacing: 3px;
     font-size: 1.7rem;
 }
@@ -132,9 +132,11 @@ a {
     padding: 10px 0;
 }
 .slogan p {
-    font-family: Oranienbaum;
+    font-family: SegoeUI;
     font-size: 1rem;
     color: #C4C4C4;
+    line-height: 10px;
+    margin-bottom: 10px;
 }
 
 .header-bottom {
@@ -192,6 +194,22 @@ a {
 /* END HEADER */
 
 
+/* HERO SECTION */
+.hero {
+    background: url(../img/paronama/hero-bg-prototype.jpg) no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+.hero .txt-box {
+    background: rgba(37, 46, 64, 0.7);
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* END HERO SECTION */
+
 
 /* helper class */
 .flex-sb {
@@ -202,6 +220,10 @@ a {
 .flex-fe {
     display: flex;
     justify-content: flex-end;
+}
+
+.col-3 {
+    width: 24%;
 }
 
 
