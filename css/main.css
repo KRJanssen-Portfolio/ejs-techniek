@@ -175,12 +175,12 @@ a {
     display: flex;
 }
 
-.nav-items .active {
+.nav-item .active {
     font-weight: bold;
     border-bottom: 2px solid #6A7EA6;
 }
 
-.nav-items .active a {
+.nav-item .active a {
     color: #6A7EA6;
 }
 
@@ -320,6 +320,25 @@ a {
     width: 30%;
 }
 /* END TENDER SECTION */
+
+/* FOOTER */
+footer {
+    background: #252E40;
+    padding: 20px 0;
+}
+
+.widget-items {
+    color: #fff;
+}
+
+.widget-items a {
+    color: #fff;
+}
+
+.widget-items a:hover {
+    color: #3F618C;
+}
+/* END FOOTER */
 
 /* helper class */
 .flex-sb {
