@@ -104,6 +104,11 @@ textarea {
     src: url(../fonts/segoe-ui/segoeuiz.ttf);
 }
 
+@font-face  {
+    font-family: Bebas;
+    src: url(../fonts/bebas/BEBAS___.TTF);
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -261,6 +266,60 @@ a {
 }
 
 /* END PORTFOLIO SECTION */
+
+/* TENDER SECTION */
+.tender { 
+    color: #fff;
+    background: #3F618C;
+}
+
+.tender form {
+    width: 50%;
+}
+
+.tender label {
+    font-size: 1.2rem;
+    font-family: Bebas;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 5px;
+}
+
+.tender input, .tender textarea {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+.tender input {
+    width: 100%;
+    padding: 5px 0 5px 5px;
+}
+
+.tender textarea {
+    resize: none;
+    height: 200px;
+    width: 100%;
+}
+
+.tender .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.tender .submit {
+    background: #6A7EA6;
+    border: none;
+    padding: 10px 0;
+    width: 100px;
+}
+
+.tender p {
+    width: 30%;
+}
+/* END TENDER SECTION */
 
 /* helper class */
 .flex-sb {
