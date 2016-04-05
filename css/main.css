@@ -114,8 +114,13 @@ h1 {
     font-size: 1.7rem;
 }
 
+section {
+    padding: 80px 0;
+}
+
 section h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
 
 li {
@@ -187,7 +192,7 @@ a {
 }
 
 .nav-item a:hover {
-    font-size: 1.05rem;
+    color: #6A7EA6;
 }
 
 .logo {
@@ -218,7 +223,6 @@ a {
 .services {
     background: #6A7EA6;
     color: #fff;
-    padding: 80px 0;
 }
 
 .services h3 {
@@ -227,9 +231,35 @@ a {
 /* END SERVICES SECTION */
 
 /* PORTFOLIO SECTION */
+.portfolio-item {
+    position: relative;
+}
+
 .portfolio-item img {
     width: 100%;
 }
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.overlay h5 {
+    color: #fff;
+    margin-top: 100px;
+}
+
+.portfolio-items li:hover .overlay {
+    display: inline;
+
+}
+
 /* END PORTFOLIO SECTION */
 
 /* helper class */
