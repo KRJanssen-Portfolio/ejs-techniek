@@ -94,12 +94,115 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Oranienbaum;
+    src: url(../fonts/oranienbaum/oranienbaum.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-family: Oranienbaum;
+    letter-spacing: 3px;
+    font-size: 1.7rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.slogan {
+    padding: 10px 0;
+}
+.slogan p {
+    font-family: Oranienbaum;
+    font-size: 1rem;
+    color: #C4C4C4;
+}
+
+.header-bottom {
+    background: #252E40;
+}
+
+.header-bottom .container {
+    position: relative;
+}
+
+.header-bottom h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.header-bottom nav {
+    align-self: center;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items .active {
+    font-weight: bold;
+    border-bottom: 2px solid #6A7EA6;
+}
+
+.nav-items .active a {
+    color: #6A7EA6;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+.nav-item a:hover {
+    font-size: 1.05rem;
+}
+
+.logo {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+/* END HEADER */
 
 
 
+/* helper class */
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
+.flex-fe {
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 
