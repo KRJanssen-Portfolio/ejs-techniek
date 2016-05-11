@@ -306,12 +306,33 @@ a {
 
 .overlay h5 {
     color: #fff;
-    margin-top: 100px;
+    margin-top: 80px;
+    font-size: 1.2rem;
+}
+
+.overlay p {
+    color: #fff;
+    font-size: 0.8rem;
 }
 
 .portfolio-items li:hover .overlay {
     display: inline;
 
+}
+
+.overlay .inner {
+    position: relative;
+}
+
+.overlay .tiny-logo {
+    width: 60px;
+    position: absolute;
+    top: 5px;
+    left: 35%;
+}
+
+.overlay .tiny-logo img {
+    width: 100%;
 }
 
 /* END PORTFOLIO SECTION */
