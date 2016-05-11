@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>EJS-Techniek</title>
+        <link rel="icon" href="img/logo/favicon.png" type="image/png" sizes="50x56">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,14 +25,14 @@
             <div class="header-top">
                 <div class="container flex-fe">
                     <div class="slogan">
-                        <h2>EJS-techniek</h2>
+                        <h2>EJS-Techniek</h2>
                         <p><i>voor technische oplossingen</i></p>
                     </div>
                 </div>
             </div>
             <div class="header-bottom">
                 <div class="container flex-sb">
-                    <h1><a href="index.html">EJS-techniek</a></h1>
+                    <h1><a href="index.html">EJS-Techniek</a></h1>
                     <nav>
                         <ul class="nav-items">
                             <li class="nav-item active"><a href="index.html">Home</a></li>
@@ -49,7 +50,7 @@
             <section class="hero">
                 <div class="container">
                     <div class="txt-box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iure, nam ratione, enim velit eligendi voluptatibus nulla.</p>
+                        <p>EJS-Techniek Voor oplossingen in staal en techniek</p>
                     </div>
                 </div>
             </section>
@@ -58,20 +59,16 @@
                     <h2>Service</h2>
                     <div class="service-items flex-sb">
                         <div class="service">
-                            <h3>Service item</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. hic aspernatur!</p>
+                            <h3>Fabriceren en monteren</h3>
+                            <p>In overleg met u kunnen wij zowel uw opdracht voor u fabriceren als monteren.</p>
                         </div>
                         <div class="service">
-                            <h3>Service item</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim dolor, vel.</p>
+                            <h3>Keuren</h3>
+                            <p>In overleg met u kunnen wij zowel uw opdracht voor u fabriceren als monteren.</p>
                         </div>
                         <div class="service">
-                            <h3>Service item</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur  elit. Illum distinctio facere, error.</p>
-                        </div>
-                        <div class="service">
-                            <h3>Service item</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur  elit. Quia sed incidunt, eum!</p>
+                            <h3>Onderhoud</h3>
+                            <p>Tevens kunnen we monteurs leveren voor onderhoud en/of montage.</p>
                         </div>
                     </div>
                 </div>
@@ -81,27 +78,27 @@
                     <h2>Portfolio</h2>
                     <ul class="portfolio-items flex-sb">
                         <li class="portfolio-item"><a href="project.html">
-                            <img src="img/portfolio-items/metal-prototype.jpg" alt="">
+                            <img src="img/portfolio-items/homepage/constructie-achter-damwand-1.jpg" alt="damwand">
                             <div class="overlay">
-                                <h5>Lorem ipsum dolor sit space.</h5>
+                                <h5>Constructie achter damwand</h5>
                             </div>
                         </a></li>
                         <li class="portfolio-item"><a href="project.html">
-                            <img src="img/portfolio-items/metal-prototype.jpg" alt="">
+                            <img src="img/portfolio-items/homepage/constructie-achter-damwand-1.jpg" alt="damwand">
                             <div class="overlay">
-                                <h5>Lorem ipsum dolor sit space.</h5>
+                                <h5>Constructie achter damwand</h5>
                             </div>
                         </a></li>
                         <li class="portfolio-item"><a href="project.html">
-                            <img src="img/portfolio-items/metal-prototype.jpg" alt="">
+                            <img src="img/portfolio-items/homepage/constructie-achter-damwand-1.jpg" alt="damwand">
                             <div class="overlay">
-                                <h5>Lorem ipsum dolor sit space.</h5>
+                                <h5>Constructie achter damwand</h5>
                             </div>
                         </a></li>
                         <li class="portfolio-item"><a href="project.html">
-                            <img src="img/portfolio-items/metal-prototype.jpg" alt="">
+                            <img src="img/portfolio-items/homepage/constructie-achter-damwand-1.jpg" alt="damwand">
                             <div class="overlay">
-                                <h5>Lorem ipsum dolor sit space.</h5>
+                                <h5>Constructie achter damwand</h5>
                             </div>
                         </a></li>
                     </ul>
@@ -109,29 +106,33 @@
             </section>
             <section class="tender">
                 <div class="container">
-                    <h2>Vraag offerte aan</h2>
+                    <h2>Vraag vrijblijvend een offerte aan</h2>
 
                     <div class="flex-sb">
-                        <form action="">
+                        <form action="mailto.php" method="POST">
                         <div class="form-group">
                             <label for="name">Naam: *</label>
-                            <input name="name" type="text">
+                            <input name="name" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail: *</label>
+                            <input type="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="company">Bedrijf:</label>
                             <input name="company" type="text">
                         </div>
                         <div class="form-group">
-                            <label for="email">E-mail: *</label>
-                            <input type="email" name="email">
+                            <label for="subject">Onderwerp: (offerte/vraag)</label>
+                            <input name="subject" type="text">
                         </div>
                         <div class="form-group">
                             <label for="message">Bericht: *</label>
-                            <textarea name="message"></textarea>
+                            <textarea name="message" required></textarea>
                         </div>
                         <input class="submit" type="submit" value="Versturen">
                     </form>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, odio non voluptatibus laborum aliquam numquam enim deserunt odit ad eligendi.</p>
+                    <p>U kunt tevens contact met ons opnemen via het contactformulier. Hierbij kunt u aangeven of het een vraag/opmerking betreft of een aanvraag voor een offerte.</p>
                     </div>
                     
                 </div>
@@ -143,7 +144,7 @@
                     <div class="widget-item">
                         <nav>
                             <h2>Menu</h2>
-                            <ul>
+                            <ul class="footer-menu">
                                 <li class="nav-item active"><a href="index.html">Home</a></li>
                                 <li class="nav-item"><a href="">Portfolio</a></li>
                                 <li class="nav-item"><a href="">Contact</a></li>
