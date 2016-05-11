@@ -303,7 +303,10 @@ a {
 /* TENDER SECTION */
 .tender { 
     color: #fff;
-    background: #3F618C;
+    background: url(../img/paronama/tender.JPG) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0;
 }
 
 .tender form {
@@ -343,10 +346,13 @@ a {
 }
 
 .tender .submit {
-    background: #6A7EA6;
-    border: none;
+    border: 1px solid #fff;
     padding: 10px 0;
     width: 100px;
+}
+
+.tender .submit:hover {
+    background: #6A7EA6;
 }
 
 .tender p {
@@ -365,6 +371,21 @@ a {
     border: none;
 }
 /* END MAPS SECTION */
+
+/* CONTACT-DETAILS SECTION */
+.contact-details {
+    background: #6A7EA6;
+    color: #fff;
+}
+
+.contact-details h2 {
+    margin-bottom: 40px;
+}
+
+.contact-details ul:last-child {
+    margin-top: 82px;
+}
+/* END CONTACT-DETAILS SECTION */
 
 /* ONELINER SECTION */
 .oneliner {
@@ -423,6 +444,11 @@ footer {
 .flex-sb {
     display: flex;
     justify-content: space-between;
+}
+
+.flex-sa {
+    display: flex;
+    justify-content: space-around;
 }
 
 .flex-fe {
