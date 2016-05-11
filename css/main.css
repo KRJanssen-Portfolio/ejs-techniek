@@ -254,7 +254,10 @@ a {
 }
 
 .service-items {
-    flex-wrap: wrap;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
 }
 
 .service {
@@ -265,7 +268,10 @@ a {
 
 /* PORTFOLIO SECTION */
 .portfolio-items {
-    flex-wrap: wrap;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;;
 }
 
 .portfolio-item {
@@ -290,8 +296,8 @@ a {
   left: 0;
   right: 0;
   z-index: 20;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 10px;
@@ -351,10 +357,10 @@ a {
 }
 
 .tender .form-group {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column; /* New notation */
     -webkit-box-orient: vertical; /* old notation */
-    display: -webkit-box; /* old notation */
+    flex-direction: column;
 }
 
 .tender .submit {
@@ -454,24 +460,23 @@ footer {
 
 /* helper class */
 .flex-sb {
-    display: flex; /* New notation */
+    
     display: -webkit-box; /* old notation */
-    justify-content: space-between; /* New notation */
+    display: flex;
     -webkit-box-pack: justify; /* old notation */
+    justify-content: space-between;
 }
 
 .flex-sa {
-    display: flex; /* New notation */
-    display: -webkit-box; /* old notation */
-    -webkit-box-pack: center;
+    display: flex;
     justify-content: space-around;
 }
 
 .flex-fe {
-    display: flex; /* New notation */
     display: -webkit-box; /* old notation */
+    display: flex;
+    -webkit-box-pack: end; /* old notation */
     justify-content: flex-end;
-    -webkit-box-pack: end;
 }
 
 .col-3 {
@@ -521,10 +526,64 @@ footer {
     /* END PORTFOLIO SECTION */
 }
 
+@media screen and (max-width: 736px) {
+    /* SERVICES SECTION */
+    .service-items {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical; /* old notation */
+        flex-direction: column; /* New notation */
+        -webkit-box-align: center; /* old notation */
+        align-items: center; /* New notation */
+    }
+    /* END SERVICES SECTION */
+
+    /* PORTFOLIO SECTION */
+    .portfolio-items {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical; /* old notation */
+        flex-direction: column; /* New notation */
+        -webkit-box-align: center; /* old notation */
+        align-items: center; /* New notation */
+    }
+
+    .portfolio-item {
+        margin-right: 0;
+    }
+
+    .portfolio-item:last-child {
+        margin-right: 0;
+    }
+
+    
+
+    /* END PORTFOLIO SECTION */
+}
+
 @media screen and (max-width: 700px) {
+    /* HERO SECTION */
+    section.hero {
+        padding: 0;
+    }
+    
+    .hero .container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero .txt-box {
+        padding: 100px 10px;
+        box-sizing: border-box;
+        width: auto;
+    }
+    /* END HERO SECTION*/
+
     /* FOOTER */
     footer .container .widget-items {
+        -webkit-box-orient: vertical; /* old notation */
         flex-direction: column;
+        -webkit-box-align: center; /* old notation */
         align-items: center;
         text-align: center;
     }
@@ -542,7 +601,10 @@ footer {
 @media screen and (max-width: 620px) {
     /* HEADER */
     .header-bottom .container {
+        -webkit-box-orient: vertical; /* old notation */
         flex-direction: column;
+        -webkit-box-align: center; /* old notation */
+        align-items: center; /* New notation */
     }
 
     .header-bottom .container h1 {
@@ -570,7 +632,9 @@ footer {
 
     /* TENDER SECTION */
     .tender .container .flex-sb {
+        -webkit-box-orient: vertical; /* old notation */
         flex-direction: column;
+        -webkit-box-align: center;
         align-items: center;
     }
 
