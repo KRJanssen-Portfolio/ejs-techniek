@@ -226,6 +226,11 @@ a {
     padding: 20px;
     text-align: center;
 }
+
+.hero .txt-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
 /* END HERO SECTION */
 
 /* SERVICES SECTION */
