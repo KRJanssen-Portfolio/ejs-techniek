@@ -221,7 +221,7 @@ a {
 
 /* HERO SECTION */
 .hero {
-    background: url(../img/paronama/06122011191.jpg) no-repeat;
+    background: url(../img/paronama/20160704_hero.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 0;
@@ -336,6 +336,16 @@ a {
 }
 
 /* END PORTFOLIO SECTION */
+
+/* PORTFOLIO GENERAL */
+.project-general .banner-img {
+    width: 100%;
+}
+
+.project-general .banner-img {
+    width: 100%;
+}
+/* END PORTFOLIO GENERAL*/
 
 /* TENDER SECTION */
 .tender { 

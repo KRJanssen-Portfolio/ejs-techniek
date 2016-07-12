@@ -48,7 +48,7 @@ if ($checkReguest) {
         \r\nBedrijf: $company
         \r\nOnderwerp: $subject
         \r\nBericht: $message";
-        mail("educativia@gmail.com",$subject ,$msg);
+        mail("info@ejs-techniek.nl",$subject ,$msg);
     } else {
         echo 'U heeft niet alle velden ingevuld <a href="index.html"> Ga terug</a>';
         die();
