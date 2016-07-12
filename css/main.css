@@ -489,6 +489,46 @@ footer {
 }
 /* END FOOTER */
 
+
+
+/* ===== SLIDE-SHOWS ===== */
+.slider {
+    position: relative;
+    height: 400px;
+}
+
+.slider .slide-img {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.arrow-navigation img {
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.arrow-navigation img:hover {
+        transform: scale(1.2);
+    }
+
+.slide-left {
+    left: 2%;
+}
+
+.slide-right {
+    right: 2%;
+}
+
+
+/* ===== END SLIDE-SHOWS =====*/
+
+
 /* helper class */
 .flex-sb {
     

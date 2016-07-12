@@ -51,17 +51,16 @@
 
         <div class="main-content">
             <div class="container">
-                <div class="w3-content" style="max-width:800px;position:relative">
-
-                    <img class="mySlides" src="img_fjords.jpg">
-                        <img class="mySlides" src="img//portfolio-items/zwolle-webs/06122011191.jpg
-                        ">
-                        <img class="mySlides" src="img/portfolio-items/zwolle-webs/100_4085.JPG">
-
-                        <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-                        <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-
-                </div>
+                <section class="gallery">
+                    <div class="slider">
+                        <img class="slide-img" src="img/portfolio-items/zwolle-webs/06122011191.jpg" alt="">
+                        <img class="slide-img" src="img/portfolio-items/zwolle-webs/100_4085.JPG" alt="">
+                        <div class="arrow-navigation">
+                            <img src="img/icons/slider-prev.png" alt="previous" class="slide-left" onclick="plusDivs(-1)">
+                            <img src="img/icons/slider-next.png" alt="next" class="slide-right" onclick="plusDivs(1)">
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
@@ -126,7 +125,7 @@
 
             function showDivs(n) {
               var i;
-              var x = document.getElementsByClassName("mySlides");
+              var x = document.getElementsByClassName("slide-img");
               if (n > x.length) {slideIndex = 1}
               if (n < 1) {slideIndex = x.length}
               for (i = 0; i < x.length; i++) {
